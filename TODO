@@ -1,0 +1,84 @@
+[ ] v1
+  [x] config parsing
+  [x] args parsing
+  [x] config validation and compliance
+  [x] rfc1918 spacing
+  [x] online reports
+  [x] buf hd base64
+  [x] yara matches formatting
+  [x] jquery minification
+  [x] background color and formatting
+  [x] code highlight w/ line numbers
+  [x] protoid merging
+  [x] rename base64 keys in report dict
+  [x] cts/stc buf size calc might need a check
+  [x] opcode hexdump should start with offset as bytecount
+  [x] show complete hexdump of bufs if size is 0 - use scrollable pre class
+  [x] yara tags - caps, separate
+  [x] honor enable pcap, yara, shellcode config opts
+  [x] regexes - ip/email/twitterhandle/phone/...
+  [x] tackle http cts req split issue - http_witp
+  [x] if filesize > 6MB?, disable entropy/bf graphs
+  [x] http transfer+content encoding: chunked, gzip and deflate normalization
+  [x] jinja filters: default, filesizeformat
+  [x] apply 128B hexdump limit on html
+  [x] dns support
+  [x] cli opts
+  [ ] logger output (change mode, silent, etc)
+  [ ] catch memory errors during hash calc
+  [[ ]] heuristics
+    [[ ]] http://data.deependresearch.org/2015/01/malware-traffic-patterns-2015.html
+    [[ ]] http://networkraptor.blogspot.in/p/user-agent-strings.html
+    [[ ]] https://perishablepress.com/2013-user-agent-blacklist/
+
+[ ] v2
+  [ ] jinja filters
+  [ ] summary section with graphs
+  [ ] db integration (hosts, flows, yara, shellcode, regex, etc)
+  [ ] interactive cli
+  [ ] rest api server
+  [ ] custom plugins architecture
+  [ ] content-type aware inspection (eg: yara/shellcode only on binary files: PE/ELF/PDF/OLE/JAR/Flash)
+  [ ] tabs for hosts, transactions and sessions
+  [ ] apply max sessions (100) limit
+  [ ] smtp/imap/pop/ftp id and decode
+  [ ] filextract
+  [ ] imagextract
+  [ ] avxtract
+  [ ] https://www.malwareviz.com/
+  [ ] https://www.networktotal.com/search.php?q=<PCAP_MD5>
+  [[ ]] graphs
+    [[ ]] top src/dst countries
+    [[ ]] top src/dst ips (traffic volume)
+    [[ ]] top src/dst ports (traffic volume)
+    [[ ]] top client platforms
+    [[ ]] http method count
+    [[ ]] http content-type
+    [[ ]] top referrers
+    [[ ]] top browsers
+    [[ ]] top platforms
+  [[ ]] heuristics
+    [[ ]] time elapsed per scan
+    [[ ]] user-agent based platform id
+    [[ ]] os fingerprinting
+    [[ ]] markov chains
+    [[ ]] show file extension, magic and content-type mismatch - expected (based on extension in rqst), resp, resp_actual
+    [[ ]] behavior sigs over shellcode profile output
+  [ ] world map linking two hosts within each session
+  [ ] shadowserver IP/BGP lookup: http://www.shadowserver.org/wiki/pmwiki.php/Services/IP-BGP
+  [ ] https://www.christophertruncer.com/just-metadata-intel-gathering-and-analysis-of-ip-metadata/
+  [ ] shodan: http://shodan.readthedocs.org/en/latest/
+  [ ] geocode: http://geocoder.readthedocs.org/en/latest/features/Distance/
+  [ ] jsonwhois: https://jsonwhois.com/docs
+  [ ] shellcode graph
+  [ ] ssllabs-scan
+  [ ] cymruwhois
+  [ ] jsonwhois - utils
+  [ ] faster whois
+  [ ] include rdns
+  [ ] collapse/expand
+  [ ] commented, mutiline regexes
+  [ ] filevis gif
+  [ ] qrcode / robohash
+  [ ] decrease bottom-padding for divs
+  [ ] heroku deployment, docker 
